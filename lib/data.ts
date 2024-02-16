@@ -5,7 +5,7 @@ type FeatureCards = {
   description: string[];
   icon?: LucideIcon;
 };
-export const featureCards = [
+export const featureCards: FeatureCards[] = [
   {
     headline: "Tailored Selections",
     description: [
@@ -36,4 +36,11 @@ export const featureCards = [
     ],
     icon: Wallet,
   },
+];
+export const productSections: string[] = [
+  "Users can share their opinion",
+  "Users can resolve any doubt",
+  "Users can reply to reviews",
+  //   "Users can rate products",
+  //   "Users can report bugs",
 ];

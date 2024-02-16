@@ -1,5 +1,5 @@
 import MarketingCard from "@/components/marketing-card";
-import { featureCards } from "@/lib/data";
+import { featureCards, productSections } from "@/lib/data";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 
@@ -21,32 +21,25 @@ const Features = () => {
         ))}
       </div>
       <h1 className="text-2xl md:text-3xl font-medium text-center">
-        Interactive comment section
+        Interactive Product Section
       </h1>
       <div className="px-12 py-8 flex  flex-col md:flex-row justify-between gap-y-4">
         <div className="md:w-[30%] w-full m-auto relative">
-          <p className="hidden md:block text-2xl p-1.5 px-1 rounded-md bg-primary/90 text-white mb-1 dark:bg-primarydark">
+          <p className="hidden md:block text-2xl p-1.5 px-1 rounded-md bg-primary/90 text-white mb-2 dark:bg-primarydark w-fit">
             An interactive comment section is
           </p>
-          <p className=" hidden md:block text-2xl p-1.5 px-1 rounded-md bg-primary/90 text-white w-4/5 dark:bg-primarydark">
+          <p className=" hidden md:block text-2xl p-1.5 px-1 rounded-md bg-primary/90 text-white w-fit dark:bg-primarydark">
             added to each product page
           </p>
           <p className="md:hidden text-xl mb-1">
             An interactive comment section is added to each product page
           </p>
-
-          <span className="md:text-lg block">
-            <Dot className="h-8 w-8 inline-block" />
-            Users can share their opinion
-          </span>
-          <span className="md:text-lg block">
-            <Dot className="h-8 w-8 inline-block" />
-            Users can resolve any doubt
-          </span>
-          <span className="md:text-lg block">
-            <Dot className="h-8 w-8 inline-block" />
-            Users can reply to reviews
-          </span>
+          {productSections.map((text, i) => (
+            <span key={i} className="md:text-lg block dark:text-whiten">
+              <Dot className="h-8 w-8 inline-block text-primarytext" />
+              {text}
+            </span>
+          ))}
         </div>
         <Image
           src={"/comment-section.svg"}
