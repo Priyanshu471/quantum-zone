@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "z-50 bg-transparent dark:bg-black-2 fixed top-0 flex justify-between items-center w-full p-6 backdrop-blur-sm drop-shadow-sm",
+        "z-50 bg-transparent dark:bg-black-2 fixed top-0 flex justify-between items-center w-full p-4 backdrop-blur-sm drop-shadow-sm",
         scrolled && " shadow border-b border-stroke dark:border-strokedark"
       )}
     >

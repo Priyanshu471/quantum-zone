@@ -20,7 +20,7 @@ const Logo = () => {
       />
       <p
         className={cn(
-          "hidden md:block font-semibold text-xl text-primarydark dark:text-primarytext",
+          "hidden md:block font-semibold text-lg text-primarydark dark:text-primarytext",
           font.className
         )}
       >

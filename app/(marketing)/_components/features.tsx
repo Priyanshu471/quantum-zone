@@ -24,7 +24,7 @@ const Features = () => {
         Interactive comment section
       </h1>
       <div className="px-12 py-8 flex  flex-col md:flex-row justify-between gap-y-4">
-        <div className="md:w-1/4 w-full m-auto relative">
+        <div className="md:w-[30%] w-full m-auto relative">
           <p className="hidden md:block text-2xl p-1.5 px-1 rounded-md bg-primary/90 text-white mb-1 dark:bg-primarydark">
             An interactive comment section is
           </p>
