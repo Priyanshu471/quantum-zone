@@ -11,7 +11,7 @@ const MarketingCard = ({
   description,
 }: MarketingCardProps) => {
   return (
-    <div className="rounded-lg border border-stroke bg-white px-7 py-6 shadow-lg dark:border-strokedark dark:bg-primarydark cursor-pointer">
+    <div className="rounded-lg border border-stroke bg-white px-7 py-6 shadow-lg dark:border-strokedark dark:bg-black cursor-pointer">
       <div className="flex items-center gap-x-2">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4">
           {children}
@@ -27,7 +27,7 @@ const MarketingCard = ({
             return (
               <p
                 key={i}
-                className="text-black dark:text-whiten mb-2 text-xs md:text-lg font-medium flex items-center"
+                className="text-black dark:text-whiten mb-2 text-sm md:text-lg font-medium flex items-center"
               >
                 <MoveRight className="h-4 w-4 mr-2 text-primary dark:text-primarytext" />
                 {desc}

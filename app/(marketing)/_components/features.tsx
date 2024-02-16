@@ -35,15 +35,15 @@ const Features = () => {
             An interactive comment section is added to each product page
           </p>
 
-          <span className="text-xl block">
+          <span className="md:text-lg block">
             <Dot className="h-8 w-8 inline-block" />
             Users can share their opinion
           </span>
-          <span className="text-xl block">
+          <span className="md:text-lg block">
             <Dot className="h-8 w-8 inline-block" />
             Users can resolve any doubt
           </span>
-          <span className="text-xl block">
+          <span className="md:text-lg block">
             <Dot className="h-8 w-8 inline-block" />
             Users can reply to reviews
           </span>
