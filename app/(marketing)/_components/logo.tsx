@@ -10,17 +10,17 @@ const font = Rubik({
 
 const Logo = () => {
   return (
-    <div className="hidden md:flex items-center gap-x-2 hover:bg-whiter/20 p-0.5 rounded-sm px-1 cursor-pointer">
+    <div className="flex items-center gap-x-2 hover:bg-whiter/20 p-0.5 rounded-sm px-1 cursor-pointer">
       <Image
         src="/marketing-logo2.png"
         width={35}
         height={35}
         alt="logo"
-        className="rounded-full"
+        className="rounded-full  "
       />
       <p
         className={cn(
-          "font-semibold text-xl text-primarydark dark:text-primarytext",
+          "hidden md:block font-semibold text-xl text-primarydark dark:text-primarytext",
           font.className
         )}
       >
