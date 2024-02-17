@@ -2,8 +2,6 @@
 import React from "react";
 import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/lib/utils";
-import Heading from "./heading";
-import Heroes from "./heroes";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 const companies = [
