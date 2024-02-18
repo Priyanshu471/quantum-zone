@@ -1,13 +1,19 @@
-import { Filter, LucideIcon, TextSearch, Wallet } from "lucide-react";
+import {
+  Filter,
+  LucideIcon,
+  MessagesSquare,
+  TextSearch,
+  Wallet,
+} from "lucide-react";
 
-type FeatureCards = {
-  headline: string;
+export interface FeatureCards {
+  title: string;
   description: string[];
   icon?: LucideIcon;
-};
+}
 export const featureCards: FeatureCards[] = [
   {
-    headline: "Tailored Selections",
+    title: "Tailored Selections",
     description: [
       "Customized Filters",
       "Easy Navigation",
@@ -17,7 +23,7 @@ export const featureCards: FeatureCards[] = [
     icon: Filter,
   },
   {
-    headline: "Comprehensive Insights & Demos",
+    title: "Comprehensive Insights & Demos",
     description: [
       "User Reviews",
       "Video Demos",
@@ -27,7 +33,7 @@ export const featureCards: FeatureCards[] = [
     icon: TextSearch,
   },
   {
-    headline: "Smart Spending",
+    title: "Smart Spending",
     description: [
       "Compare Prices",
       "Find Discounts",
@@ -35,6 +41,15 @@ export const featureCards: FeatureCards[] = [
       "Best Value for Money",
     ],
     icon: Wallet,
+  },
+  {
+    title: "Interactive Comment Section",
+    description: [
+      "Users can share their opinion",
+      "Users can resolve any doubt",
+      "Users can reply to reviews",
+    ],
+    icon: MessagesSquare,
   },
 ];
 export const productSections: string[] = [

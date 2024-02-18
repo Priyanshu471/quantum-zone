@@ -1,5 +1,4 @@
 import Footer from "./_components/footer";
-import Search from "./_components/search";
 import Features from "./_components/features";
 import { HomeSection } from "./_components/homeSection";
 
