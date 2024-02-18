@@ -1,6 +1,9 @@
 import Footer from "./_components/footer";
 import Features from "./_components/features";
 import { HomeSection } from "./_components/homeSection";
+import { useLoader } from "@/hooks/use-loader";
+import { useEffect } from "react";
+import Loader from "@/components/Loader/loader";
 
 export default function Home() {
   return (
