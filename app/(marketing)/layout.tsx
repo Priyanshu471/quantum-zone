@@ -9,7 +9,7 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 3200);
     // setLoading(false);
   }, [loading, setLoading]);
   if (loading) return <Loader />;
