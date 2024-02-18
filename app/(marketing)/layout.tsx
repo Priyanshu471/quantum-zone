@@ -9,9 +9,9 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2800);
+    }, 3000);
     // setLoading(false);
-  }, []);
+  }, [loading, setLoading]);
   if (loading) return <Loader />;
   return (
     <div className="h-full dark:bg-black-2 bg-whiter">
