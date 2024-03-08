@@ -1,9 +1,7 @@
 "use client";
-import { cn } from "@/lib/utils";
 import Logo from "./logo";
 import { useScrollTop } from "@/hooks/use-scroll-top";
 import { marketingLinks } from "@/lib/menu";
-// import Link from "next/link";
 import { Link } from "react-scroll";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
@@ -20,10 +18,9 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={cn(
-        "z-50 bg-transparent dark:bg-black-2 fixed top-0 flex justify-between items-center w-full p-4 backdrop-blur-sm drop-shadow-sm",
-        scrolled && " shadow border-b border-stroke dark:border-strokedark"
-      )}
+      className={`z-50 bg-transparent dark:bg-black-2 fixed top-0 flex justify-between items-center w-full p-4 backdrop-blur-sm drop-shadow-sm ${
+        scrolled ? "shadow border-b border-stroke dark:border-strokedark" : ""
+      }`}
     >
       <Logo />
       {!isMobile && (
